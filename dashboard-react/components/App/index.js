@@ -168,10 +168,10 @@ function AppPage() {
                         <Typography sx={{fontWeight: 700}}>Flow Control</Typography>
 
                         <Typography sx={{marginTop: "25px"}}>Current Question:</Typography>
-                        <Typography>{questions[currentQuestionId].question}</Typography>
+                        <Typography>{questions.length > 0 && questions[currentQuestionId].question}</Typography>
 
                         <Typography sx={{marginTop: "10px"}}>Current Answer:</Typography>
-                        <Typography>{questions[currentQuestionId].answer}</Typography>
+                        <Typography>{questions.length > 0 && questions[currentQuestionId].answer}</Typography>
 
                         <Box sx={{display: "flex", flexDirection: "column", marginTop: "25px"}}>
                             <Button variant="contained" sx={{marginBottom: "5px"}} onClick={() => nextQuestion()}>Next Question</Button>
