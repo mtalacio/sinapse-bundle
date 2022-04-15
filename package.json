@@ -1,0 +1,75 @@
+{
+  "name": "sinapse",
+  "version": "0.0.0",
+  "description": "Sinapse Bundle",
+  "homepage": "",
+  "author": {
+    "name": "Matheus Talacio",
+    "email": "mtalacio@gmail.com",
+    "url": ""
+  },
+  "files": [
+    "dashboard",
+    "graphics",
+    "extension.js",
+    "extension"
+  ],
+  "keywords": [
+    "",
+    "nodecg-bundle"
+  ],
+  "nodecg": {
+    "compatibleRange": "^1.1.1",
+    "dashboardPanels": [
+      {
+        "name": "panel",
+        "title": "Painel",
+        "file": "index.html",
+        "headerColor": "#525F78",
+        "fullbleed": "true"
+      }
+    ],
+    "graphics": [
+      {
+        "file": "index.html",
+        "width": 1280,
+        "height": 720,
+        "singleInstance": false
+      }
+    ]
+  },
+  "repository": "https://github.com/nodecg/nodecg.git",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@emotion/react": "^11.8.1",
+    "@emotion/styled": "^11.8.1",
+    "@fontsource/roboto": "^4.5.5",
+    "@fontsource/rubik": "^4.5.6",
+    "@material-ui/icons": "^4.11.3",
+    "@mui/material": "^5.4.4",
+    "@mui/x-data-grid": "^5.8.0",
+    "crypto": "^1.0.1",
+    "flux": "^4.0.3",
+    "parcel": "^2.4.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "ws": "^8.5.0"
+  },
+  "scripts": {
+    "start-dashboard": "parcel watch dashboard-react/index.html --dist-dir dashboard --public-url ./",
+    "build-dashboard": "parcel build dashboard-react/index.html --dist-dir dashboard --public-url ./",
+    "start-graphics": "parcel watch graphics-react/index.html --dist-dir graphics --public-url ./",
+    "build-graphics": "parcel build dashboard-react/index.html --dist-dir dashboard --public-url ./"
+  },
+  "devDependencies": {
+    "buffer": "^6.0.3",
+    "crypto-browserify": "^3.12.0",
+    "events": "^3.3.0",
+    "path-browserify": "^1.0.1",
+    "process": "^0.11.10",
+    "querystring-es3": "^0.2.1",
+    "stream-http": "^3.2.0",
+    "url": "^0.11.0",
+    "util": "^0.12.4"
+  }
+}

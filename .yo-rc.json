@@ -1,0 +1,9 @@
+{
+  "generator-nodecg": {
+    "promptValues": {
+      "authorName": "Matheus Talacio",
+      "authorEmail": "mtalacio@gmail.com",
+      "authorUrl": ""
+    }
+  }
+}
